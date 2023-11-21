@@ -4,7 +4,7 @@
     --moderate-violet: hsl(263, 55%, 52%);
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --very-dark-blackish-blue: hsl(219, 29%, 14%);
-    --white: #fefefe;
+    --white: hsl(0, 0%, 100%);
 
     /* Neutral colors */
     --light-gray: hsl(0, 0%, 81%);
@@ -42,6 +42,7 @@ main {
     border-radius: 10px;
     padding: 2em;
     margin-block: 2rem;
+    box-shadow: 2px 3px 10px 1px #d4d4d4;
 }
 
 .card-header {
@@ -68,14 +69,45 @@ h2 {
     font-weight: 500;
 }
 
+h3 {
+    margin-top: 1.2rem;
+}
+
+p {
+    font-weight: 500;
+    margin-top: 1.4rem;
+}
+
+#white-transparent-para {
+    color: hsla(0, 0%, 100%, 0.70);
+}
+
+#white-title-transparent {
+    color: hsla(0, 0%, 100%, 0.50);
+}
+
+#dark-title-transparent {
+    color: hsla(0, 0%, 0%, 0.5);
+}
+
+#dark-para-transparent {
+    color: hsla(0, 0%, 0%, 0.7);
+}
+
 #purple,
 #gray,
 #dark-gray {
     color: var(--white);
 }
 
+
+
+
 #purple {
     background-color: var(--moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 5px right 40px;
 }
 
 #gray {
