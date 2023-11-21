@@ -1,0 +1,92 @@
+:root {
+
+    /* Primary colors */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: #fefefe;
+
+    /* Neutral colors */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: hsl(0, 0, 85%);
+    letter-spacing: 1.1px;
+}
+
+main {
+    max-width: 375px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 2em;
+    margin-block: 2rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    margin-block: auto;
+    margin-right: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border: var(--moderate-violet) 1px solid;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+#purple,
+#gray,
+#dark-gray {
+    color: var(--white);
+}
+
+#purple {
+    background-color: var(--moderate-violet);
+}
+
+#gray {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+#dark-gray {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+#white-short,
+#white-long {
+    background-color: var(--white);
+}
