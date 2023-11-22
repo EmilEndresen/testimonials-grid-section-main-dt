@@ -27,6 +27,7 @@ html {
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -53,10 +54,14 @@ main {
 img {
     margin-block: auto;
     margin-right: 1.5rem;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: var(--moderate-violet) 1px solid;
     border-radius: 50%;
+}
+
+#daniel {
+    border: hsl(263, 65%, 63%) 2px solid;
 }
 
 h1 {
@@ -70,12 +75,33 @@ h2 {
 }
 
 h3 {
+    font-size: 1.5rem;
     margin-top: 1.2rem;
+    max-width: 37ch;
 }
 
 p {
     font-weight: 500;
     margin-top: 1.4rem;
+}
+
+h3,
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: var(--moderate-violet);
+}
+
+a:visited,
+a:hover {
+    color: var(--very-dark-blackish-blue);
+}
+
+.card-title {
+    height: fit-content;
+    margin-block: auto;
 }
 
 #white-transparent-para {
@@ -121,4 +147,50 @@ p {
 #white-short,
 #white-long {
     background-color: var(--white);
+}
+
+
+@media (min-width: 700px) {
+    main {
+        margin: 10rem 0 5rem 0;
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 3em;
+        grid-template-areas:
+            "purple purple gray long"
+            "white dark dark long";
+    }
+
+    #purple {
+        grid-area: purple;
+    }
+
+    #gray {
+        grid-area: gray;
+    }
+
+    #white-long {
+        grid-area: long;
+    }
+
+    #dark-gray {
+        grid-area: dark;
+    }
+
+    #white-short {
+        grid-area: white;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+
+    h3 {
+        max-width: 100ch;
+    }
+
+
 }
